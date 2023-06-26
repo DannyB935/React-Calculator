@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+body{
+  background-image: url('../public/textura-papel-blanco.jpg');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.calculator {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #181d22;
 }
 
-.App-link {
-  color: #61dafb;
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f29d00;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.gray-button {
+  background-color: #f1b354;
+}
+
+button:hover {
+  background-color: #ffbd58;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  background-color: #aaa;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 24px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  text-align: right;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.operation-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffc858;
+  cursor: pointer;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.operation-button:last-child {
+  margin-right: 0;
+}
+
+.operation-button:hover {
+  background-color: #ffde58;
+}
+
+.operation-button:focus {
+  outline: none;
+}
+
+.operation-button:active {
+  background-color: #aaa;
 }

@@ -3,7 +3,7 @@ function OperationButton(props){
 
     return(
 
-        <div onClick={()=>{props.onClick(props.operation)}} > {props.operation} </div>
+        <div onClick={()=>{props.onClick(props.operation)}} className="operation-button"> {props.operation} </div>
 
     );
 }
