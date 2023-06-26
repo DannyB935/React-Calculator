@@ -1,8 +1,9 @@
 
 function OperationButton(props){
+
     return(
 
-        <div> {props.operation} </div>
+        <div onClick={()=>{props.onClick(props.operation)}} > {props.operation} </div>
 
     );
 }
